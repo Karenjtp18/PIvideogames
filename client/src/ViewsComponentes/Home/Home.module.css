@@ -1,0 +1,70 @@
+.landing {
+  /* background-image: url('https://img.freepik.com/foto-gratis/equipo-videojuegos-futurista-iluminado-ia-generativa-discoteca_188544-32105.jpg?w=740&t=st=1686659192~exp=1686659792~hmac=05810c11b506e17cb5ade918cc1c2bed87a142c2ba5f7d4fad02922c6c9bd808'); */
+  background-repeat: no-repeat;
+  background-image: url("https://guiasdevideojuegos.com/wp-content/uploads/2020/02/2-1024x640.jpg");
+
+  background-size: cover;
+  width: auto;
+  height: auto;
+  /* height: 100vh; */
+  background-attachment: scroll;
+}
+
+.navContainer {
+  display: flex;
+  flex-direction: row; /* Cambia la dirección a horizontal para pantallas más grandes */
+  justify-content: space-between; /* Ajusta el espacio entre los elementos */
+  align-items: center;
+  margin: 10px 0px;
+  font-family: cursive;
+}
+
+.paginado {
+  padding: 10px;
+  margin: 15px;
+
+  text-align: center;
+}
+
+.cardsContainer {
+  padding: 20px;
+}
+
+.main {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin-top: 5px;
+  gap: 10px;
+}
+
+.unButton {
+  background-color: #383a3b;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  padding: 10px 15px;
+  margin-right: 5px;
+  cursor: pointer;
+  transition: all 0.3s;
+}
+
+.unButton:hover {
+  background-color: #b7bfc5;
+  transform: translateY(3px); /* Desplaza el botón hacia abajo */
+}
+.unButtonAbajo {
+  background-color: #383a3b;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  padding: 10px 15px;
+  margin-right: 5px;
+  cursor: pointer;
+  transition: all 0.3s;
+}
+
+.unButtonAbajo:hover {
+  background-color: #b7bfc5;
+  transform: translateY(-3px); /* Desplaza el botón hacia abajo */
+}
