@@ -1,0 +1,50 @@
+.padre {
+  display: flex;
+  /* justify-content: center; */
+  /* background-image: url('https://img.freepik.com/foto-gratis/equipo-videojuegos-futurista-iluminado-ia-generativa-discoteca_188544-32105.jpg?w=740&t=st=1686659192~exp=1686659792~hmac=05810c11b506e17cb5ade918cc1c2bed87a142c2ba5f7d4fad02922c6c9bd808'); */
+  background-image: url("https://png.pngtree.com/background/20230522/original/pngtree-desk-with-several-video-game-consoles-on-top-picture-image_2695069.jpg");
+  background-size: cover;
+  min-height: 100vh;
+  align-items: center;
+  justify-content: center;
+}
+.card {
+  text-align: center;
+  /* margin-top: 20px; */
+  background-color: rgba(60, 57, 66, 0.439);
+  width: 100vh;
+  height: 80vh;
+  padding: 20px;
+  /* box-sizing: border-box; */
+  border-radius: 50px;
+  font-family: "arial", cursive;
+  font-size: 0.8rem;
+  box-shadow: 10px 10px 5px 0px rgba(9, 6, 6, 0.75);
+  text-shadow: 8px 8px 4px black, 0 0 22px grey;
+  color: white;
+}
+
+.container {
+  display: flex;
+  background-image: url("https://img.freepik.com/foto-gratis/equipo-videojuegos-futurista-iluminado-ia-generativa-discoteca_188544-32105.jpg?w=740&t=st=1686659192~exp=1686659792~hmac=05810c11b506e17cb5ade918cc1c2bed87a142c2ba5f7d4fad02922c6c9bd808");
+  background-size: cover;
+  min-height: 100vh;
+  align-items: center;
+  justify-content: center;
+}
+
+.buttonEffect {
+  transition: opacity 0.3s ease-in-out, transform 0.2s ease-in-out;
+}
+
+.buttonEffect:hover {
+  opacity: 0.5;
+  transform: scale(1.1);
+}
+
+.todoinput {
+  justify-content: center;
+  margin-left: 40px;
+  margin-right: 60%;
+  padding: 2%;
+}
