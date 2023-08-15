@@ -1,13 +1,11 @@
 .landing {
-  /* background-image: url('https://img.freepik.com/foto-gratis/equipo-videojuegos-futurista-iluminado-ia-generativa-discoteca_188544-32105.jpg?w=740&t=st=1686659192~exp=1686659792~hmac=05810c11b506e17cb5ade918cc1c2bed87a142c2ba5f7d4fad02922c6c9bd808'); */
   background-repeat: no-repeat;
-  background-image: url("https://guiasdevideojuegos.com/wp-content/uploads/2020/02/2-1024x640.jpg");
-
+  background-image: url("https://c.wallhere.com/photos/82/69/Super_Mario_video_games_reflection_Nintendo-1211620.jpg!d");
   background-size: cover;
   width: auto;
   height: auto;
-  /* height: 100vh; */
-  background-attachment: scroll;
+  background-attachment: fixed; /* Cambia la propiedad a fixed para fijar la imagen */
+  object-fit: cover;
 }
 
 .navContainer {
@@ -36,6 +34,19 @@
   justify-content: center;
   margin-top: 5px;
   gap: 10px;
+}
+
+.loadingContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh; /* Ajusta esto según tus necesidades */
+}
+
+.loadingImage {
+  max-width: 100%;
+  height: auto;
 }
 
 .unButton {

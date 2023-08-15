@@ -1,8 +1,19 @@
+/* .padre {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+} */
+
 .padre {
   display: flex;
   justify-content: center;
   align-items: center;
   flex-direction: column;
+  background-image: url("https://fondosmil.com/fondo/53804.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
 }
 
 .card {

@@ -1,50 +1,222 @@
-.padre {
+.container {
   display: flex;
-  /* justify-content: center; */
-  /* background-image: url('https://img.freepik.com/foto-gratis/equipo-videojuegos-futurista-iluminado-ia-generativa-discoteca_188544-32105.jpg?w=740&t=st=1686659192~exp=1686659792~hmac=05810c11b506e17cb5ade918cc1c2bed87a142c2ba5f7d4fad02922c6c9bd808'); */
-  background-image: url("https://png.pngtree.com/background/20230522/original/pngtree-desk-with-several-video-game-consoles-on-top-picture-image_2695069.jpg");
-  background-size: cover;
-  min-height: 100vh;
-  align-items: center;
   justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  background-image: url("https://get.wallhere.com/photo/illustration-video-games-horse-cartoon-Super-Mario-Princess-Peach-pink-Nintendo-horse-like-mammal-38776.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
 }
-.card {
+
+.alerta {
+  border: 1px solid rgba(255, 255, 255, 0.25);
+  background: #f5f6f8;
+  margin: 20px;
+  color: red;
+  width: 750px;
+  padding: 10px;
+  text-align: center; /* Alinea el texto en el centro */
+  font-weight: bold;
+}
+
+.form {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
   text-align: center;
-  /* margin-top: 20px; */
-  background-color: rgba(60, 57, 66, 0.439);
-  width: 100vh;
-  height: 80vh;
-  padding: 20px;
-  /* box-sizing: border-box; */
-  border-radius: 50px;
-  font-family: "arial", cursive;
-  font-size: 0.8rem;
-  box-shadow: 10px 10px 5px 0px rgba(9, 6, 6, 0.75);
-  text-shadow: 8px 8px 4px black, 0 0 22px grey;
+  background-color: #334d49b2;
+  width: 800px;
+  /* padding: 150px; */
+  box-sizing: border-box;
+  /* margin:20px; */
+  border-radius: 20px;
+  font-family: "Gloria Hallelujah", cursive;
+  font-size: 1rem;
+  box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.75);
   color: white;
 }
 
-.container {
+.inputBox {
   display: flex;
-  background-image: url("https://img.freepik.com/foto-gratis/equipo-videojuegos-futurista-iluminado-ia-generativa-discoteca_188544-32105.jpg?w=740&t=st=1686659192~exp=1686659792~hmac=05810c11b506e17cb5ade918cc1c2bed87a142c2ba5f7d4fad02922c6c9bd808");
-  background-size: cover;
-  min-height: 100vh;
+  justify-content: center;
   align-items: center;
-  justify-content: center;
+  flex-direction: column;
+  width: 600px;
+  margin: 20px;
 }
 
-.buttonEffect {
-  transition: opacity 0.3s ease-in-out, transform 0.2s ease-in-out;
+.inputBox > .input {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid rgba(255, 255, 255, 0.25);
+  background: #1d2b3a;
+  font-size: 15px;
+  color: rgba(255, 255, 255, 0.62);
+  border-radius: 10px;
+}
+.inputBox > .date {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid rgba(255, 255, 255, 0.25);
+  background: #1d2b3a;
+  color: rgba(255, 255, 255, 0.62);
+  border-radius: 10px;
 }
 
-.buttonEffect:hover {
-  opacity: 0.5;
-  transform: scale(1.1);
+.inputBox > .date::-webkit-calendar-picker-indicator {
+  padding: 5px;
+  cursor: pointer;
+  border-radius: 3px;
+  background-color: rgba(255, 255, 255, 0.62);
+  box-shadow: 3px 3px 6px rgba(255, 255, 255, 0.25),
+    -3px -3px 6px rgba(255, 255, 255, 0.25);
 }
 
-.todoinput {
-  justify-content: center;
-  margin-left: 40px;
-  margin-right: 60%;
-  padding: 2%;
+.rangeBox {
+  position: relative;
+  width: 250px;
+}
+.rangeBox > .range {
+  width: 100%;
+  -webkit-appearance: none;
+  background: #1d2b3a;
+  border-radius: 10px;
+}
+
+.rangeBox > .range::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  width: 15px;
+  height: 15px;
+  border-radius: 50%;
+  background: rgba(255, 255, 255, 0.25);
+}
+.rangeBox > .number {
+  border: 1px solid rgba(255, 255, 255, 0.25);
+  background-color: #aa2f7f;
+  border-radius: 20px;
+  color: rgba(255, 255, 255, 0.62);
+  padding: 0 10px;
+}
+
+.inputBox > .option {
+  text-align: center;
+  width: 100%;
+  background: #1d2b3a;
+  color: rgba(255, 255, 255, 0.62);
+  font-size: 15px;
+  border-radius: 10px;
+}
+
+.inputBox > .div {
+  box-sizing: border-box;
+  width: 50%;
+  height: auto;
+  border: 1px solid rgba(255, 255, 255, 0.25);
+  background: #1d2b3a;
+  border-radius: 10px;
+  margin: 5px;
+}
+
+.a {
+  margin-top: 100px;
+  position: relative;
+  background: #aa2f7f;
+  color: #fff;
+  text-decoration: none;
+  /* text-transform: uppercase; */
+  font-size: 1.5em;
+  letter-spacing: 0.1em;
+  padding: 10px 30px;
+  transition: 0.5s;
+  bottom: -100px;
+  left: -30rem;
+  text-shadow: 0 0 10px #01843a, 0 0 20px #01843a, 0 0 40px #01843a,
+    0 0 80px #01843a, 0 0 120px #01843a;
+}
+
+.a:hover {
+  letter-spacing: 0.25em;
+  background: var(#aa2f7f);
+  color: var(#aa2f7f);
+  box-shadow: 0 0 35px var(#aa2f7f);
+}
+
+.a::before {
+  content: "";
+  position: absolute;
+  inset: 2px;
+  background: #a00775;
+}
+
+.a > span {
+  position: relative;
+  z-index: 1;
+}
+
+.a > i {
+  position: absolute;
+  inset: 0;
+  display: block;
+}
+
+.a > i::before {
+  content: "";
+  position: absolute;
+  top: -3.5px;
+  left: 80%;
+  width: 10px;
+  height: 5px;
+  border: 2px solid #aa2f7f;
+  background: #aa2f7f;
+  transform: translateX(-50%);
+  transition: 0.5s;
+}
+
+.a:hover > i::before {
+  width: 20px;
+  left: 20%;
+}
+
+.a > i::after {
+  content: "";
+  position: absolute;
+  bottom: -3.5px;
+  left: 20%;
+  width: 10px;
+  height: 5px;
+  border: 2px solid #bf16ab;
+  background: #b12698;
+  transform: translateX(-50%);
+  transition: 0.5s;
+}
+
+.a:hover > i::after {
+  width: 20px;
+  left: 80%;
+}
+
+.div > .buttonSelect {
+  background: rgb(172, 41, 131);
+  text-shadow: 0 0 2.5px #01843a, 0 0 5px #01843a, 0 0 10px #01843a,
+    0 0 80px #01843a, 0 0 120px #01843a;
+  color: #fff;
+  border-radius: 5px;
+  border: 3px solid rgba(255, 255, 255, 0.25);
+  margin: 10px;
+  cursor: pointer;
+  letter-spacing: 1.5px;
+  padding: 3.5px;
+}
+
+.form > .boxButton {
+  margin: 25px;
+}
+
+.form > .boxButton > .button {
+  color: rgba(255, 255, 255, 0.62);
+  background-color: #aa2f7f;
+  border-radius: 5px;
+  padding: 10px;
 }

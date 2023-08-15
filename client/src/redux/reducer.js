@@ -37,6 +37,19 @@ const reducer = (state = initialState, action) => {
     case GET_GENRES:
       return { ...state, genres: action.payload };
 
+    // case FILTER_ORIGIN:
+    //   if ("API" === action.payload) {
+    //     const filterApi = state.copiaVideoGames.filter(
+    //       (e) => e.created !== true
+    //     );
+    //     return { ...state, videoGames: filterApi };
+    //   } else if ("Created" === action.payload) {
+    //     const filterDb = state.videoGames.filter((e) => e.created === true);
+    //     return { ...state, videoGames: filterDb };
+    //   } else {
+    //     return { ...state, videoGames: state.copiaVideoGames };
+    //   }
+
     case FILTER_ORIGIN:
       if ("API" === action.payload) {
         const filterApi = state.copiaVideoGames.filter(
@@ -44,8 +57,10 @@ const reducer = (state = initialState, action) => {
         );
         return { ...state, videoGames: filterApi };
       } else if ("Created" === action.payload) {
-        const filterDb = state.videoGames.filter((e) => e.created === true);
-        return { ...state, videoGames: filterDb };
+        const filterCreated = state.copiaVideoGames.filter(
+          (e) => e.created === true
+        );
+        return { ...state, videoGames: filterCreated };
       } else {
         return { ...state, videoGames: state.copiaVideoGames };
       }

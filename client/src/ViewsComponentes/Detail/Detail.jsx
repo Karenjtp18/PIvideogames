@@ -7,7 +7,6 @@ import { Link } from "react-router-dom";
 
 const Detail = () => {
   let { detailId } = useParams();
-  // detailId = Number(detailId);
 
   const detail = useSelector((state) => state.gameDetail);
   console.log(detail);
@@ -25,7 +24,6 @@ const Detail = () => {
             <>
               <div className={style.buttonEffect}>
                 <Link to="/home">
-                  {/* <a  className={style.a} href="#"><span >BACK HOME</span><i></i></a> */}
                   <button>BACK HOME</button>
                 </Link>
               </div>

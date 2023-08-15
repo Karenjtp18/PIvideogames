@@ -67,13 +67,13 @@ function Home() {
       <div className={style.main}>
         <div>
           <NavBar></NavBar>
-
           {loading ? (
-            <div>
+            <div className={style.loadingContainer}>
               <h1>im loading</h1>
               <img
-                src="https://media3.giphy.com/media/3oEjI6SIIHBdRxXI40/200w.gif?cid=6c09b952542dzbun2w1r7f3dk1x94igjth33h99grfpijkha&ep=v1_gifs_search&rid=200w.gif&ct=g"
+                src="https://media.tenor.com/UnFx-k_lSckAAAAC/amalie-steiness.gif"
                 alt="Cargando..."
+                className={style.loadingImage}
               />
             </div>
           ) : (

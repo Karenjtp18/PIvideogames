@@ -81,10 +81,7 @@ const Form = () => {
     } else if (valor.genres.length === 0) {
       setValidador("One or more genres required");
     } else {
-      const postGame = await axios.post(
-        "http://localhost:3001/videogames",
-        valor
-      );
+      await axios.post("http://localhost:3001/videogames", valor);
 
       setValidador("");
       setvalor({
@@ -97,7 +94,7 @@ const Form = () => {
         genres: [],
       });
       dispatch(getAllGames());
-      alert(postGame.data.message);
+      alert("!Videojuego creado exitosamente!");
     }
   };
 
